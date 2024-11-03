@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+p {
+  font-size: 1rem; /*16px*/
+  line-height: 1.9rem;
+  color: chocolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* button */
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border: 1.5px solid chocolate;
+  cursor: pointer;
+  color: chocolate;
+}
+.btn:hover {
+  color: bisque;
+  background-color: chocolate;
+  border: 1.5px solid bisque;
+  cursor: pointer;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: rgb(229, 166, 48);
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.title::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: chocolate;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+/* logo dan navbar menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 3rem;
+}
+.navbar ul li a {
+  color: chocolate;
+}
+.navbar ul li a:hover {
+  color: bisque;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.logo a {
+  color: chocolate;
+}
+
+/* home section */
+#home {
+  display: grid;
+  height: 500px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-name {
+  color: chocolate;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.home-right img {
+  width: 350px;
+  border-radius: 0.5rem;
+}
+
+.home-right {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+}
+
+/* about */
+#About {
+  background-color: rgb(255, 244, 234);
+  padding: 1rem 0;
+}
+.title-about {
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.about {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 3rem;
+}
+h1 {
+  color: chocolate;
+}
+.about h4 {
+  margin-bottom: 1rem;
+}
+.about p {
+  text-align: justify;
+  color: chocolate;
+}
+.icon-card img {
+  width: 50px;
+  height: 40px;
+}
+
+/* skills & Experience*/
+#skill {
+  padding: 3.5rem;
+  background: white;
+}
+.title-skill {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  color: chocolate;
+}
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+.Experience {
+  display: flex;
+  gap: 3rem;
+}
+h4 {
+  color: chocolate;
+}
+.Experience line {
+  padding: 0 0.7rem;
+}
+.Experience .line div {
+  width: 2px;
+  height: 100%;
+  background: chocolate;
+  position: relative;
+}
+.Experience-info {
+  margin: 0.3rem 0;
+}
+.Experience-date {
+  margin-bottom: 3rem;
+}
+.Experience .line div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: chocolate;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+.skill-right {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+li {
+  color: chocolate;
+}
+
+/* contact section */
+#Contact {
+  padding: 6rem;
+  background-color: rgb(255, 244, 234);
+}
+
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Roboto, sans-serif";
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: chocolate;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.btn-kirim {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  background-color: chocolate;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-kirim:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+/* footer */
+footer {
+  margin-bottom: 0;
+  padding: 0.2rem 0;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 0;
+}
+
+.footer-icons a {
+  margin: 0 0 5rem;
+}
+
+.footer-icons a:hover {
+  fill: black;
+}
+
+.footer-icons {
+  fill: gray;
+}
